@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" content>
+<head>
+    <link rel="stylesheet" media="screen" type='text/css' href='1.css'>
+    <script language="JavaScript">
+        function verif()
+        {
+
+        tel=document.hassen.tél.value;
+        ch=tel.toString();
+        if (ch.length != 8)
+        {
+
+
+        alert('invalid numéro');
+        return false;
+
+        }
+        var nom=document.hassen.prénom.value;
+        i=0;
+        l=prénom.length;
+        while (i<l)
+        {
+        if ((prénom.charAt(i)>='a') && (prénom.charAt(i)<='z'))
+        i++;
+        else
+        {
+        alert(nom)
+        alert('invalid prénom ');
+        return false;
+        }
+        }
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+    
+</head> 
+<body >
+<h1>Agence de voyage</h1><hr>
+<form name='hassen'>
+<fieldset class="personelle">
+<legend>Information Personelles</legend>
+<label>Nom:</label><input type="text" name='name' id='name' placeholder='exp:Rayen' minlength="2"><br>
+<label>Prénom:</label><input type='text' name='name' id='prénom' placeholder='Exp:Aouini'minlength="2"><br>
+<label>Email:</label><input type='email' name='email' id='email' placeholder='Exp:nom@gmail.com'><br>
+<label>Téléphone: </label><input type='tel' name='téléphone' id='tél' placeholder='Un entier contient 8 chiffre!!!'><br>
+<label>Localité:</label>
+<select name='localité' size='1'>
+    <optgroup label='europe' size='1'>
+        <option label='France'>France</option>
+        <option label='Belgique'>Belgique</option>
+        <option label='Italie'>Italie</option>
+        <option label='england'>Angletere</option>
+    </optgroup>
+    <optgroup label='north afrique' size='1'>
+        <option label='Tunisie'>Tunisie</option>
+        <option label='Algérie'>Algérie</option>
+        <option label='Maroc'>Maroc</option>
+        <option label='Libye'>Libye</option>
+    </optgroup>
+    <optgroup label='autre' size='1'>
+        <option label='autre'>Autre</option>
+    </optgroup>
+</select><br>
+<label>Homme</label><input type='radio' name='sexe' value='homme'>
+<label>Femme</label><input type='radio' name='sexe' value='femme'>
+</fieldset>
+<fieldset class='if' >
+<legend>Information Voyage</legend>
+<label>Voyage Choisi:</label><select name='voyage choisi'>
+    <option value='in'>Tunisia, Jerba</option>
+    <option value='maroc'>MAROC, CASA BALANCA </option>
+    <option value='france'>FRANCE, PARIS </option>
+    <option value='sud'>SUD D'AFRIQUE ,LE CAP  </option>
+    <option value='in'>italie, Rome</option>
+    <option value='it'>INDIA, New Delhi</option>
+    <option value='mal'>Malaysia, Kuala Lumpur</option>
+    <option value='in'>Brazil ,rio de janeiro</option>
+    <option value='in'>Kenya, Masai Mara National Reserve </option>
+</select><br>
+<label>Formule De Voyage</label><select name='formule voyage'>
+    <option value='1'>Circuit Arivé Avec Guide</option>
+    <option value='2'>Circuit Privé Sans Guide</option>
+    <option value='3'>Départ Garanti</option>
+    <option value='4'>Circuit Accompagné</option>
+</select><br>
+<label>Période </label><select name='période'>
+    <option value='jan'>Jan</option>
+    <option value='fev'>Fev</option>
+    <option value='mars'>Mars</option>
+    <option value='avril'>Avril</option>
+    <option value='mai'>Mai</option>
+    <option value='juin'>Juin</option>
+    <option value='juillet'>Juillet</option>
+    <option value='août'>Août</option>
+    <option value='septembre'>Septembre</option>
+    <option value='october'>October</option>
+    <option value='November'>November</option>
+    <option value='décembre'>Décembre</option>
+</select><br>
+<label>Durée</label><select name='durée'>
+    <option value='01'>7 Jours</option>
+    <option value='02'>14 Jours</option>
+</select><br>
+<label>Catégorie Des Hôtels</label><select name='Catégorie des hôtels'>
+    <option value='3*'>Hotel 3 étoiles ***</option>
+    <option value='4*'>Hotel 4 étoiles ****</option>
+    <option value='5*'>Hotel 5 étoiles *****</option>
+
+</select><br>
+<label>Régime</label><select name='Régime'>
+    <option value='first'>Petit Déjeuner</option>
+    <option value='second'>Demi-Pension</option>
+    <option value='third'>Pension Compléte</option>
+    <option value='fourth'>All-In</option>
+
+
+</select><br>
+<label>Nombre Adultes:</label><input type='number' name='adulte' id='adult' max="4" min="1"><br>
+<label>Enfants</label><input type='number' name='enfants:' id='adult' max="4" min="1"><br>
+</fieldset>
+<input type="submit"value='continuez' onclick='verif()'>
+<input type='reset' value='annuler'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+</body>
